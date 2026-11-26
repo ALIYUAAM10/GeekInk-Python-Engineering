@@ -5,15 +5,22 @@ name = input("Enter your name: ")
 surname = input("Enter your surname: ")
 dob = input("Enter your date of birth (YYYY): ")
 age = current_year - int(dob)
+if age >= 18: 
+    print("You are eligible to register on your own.")
+else:
+    print("You are under 18. A parent or guardian's NIN is required.")
+    guardian_nin = input("Enter your parent or guardian's NIN: ")
 state = input("Enter your state of origin: ")
 local_government = input("Enter your local government area: ")
 area = input("Enter your area of residence: ")
-phone_number = input("Enter your phone number ")
-email_address = input("Enter your email address ")
+phone_number = input("Enter your phone number: ")
+email_address = input("Enter your email address: ")
 next_of_kin = input("Enter your next of kin: ")
-relationship_with_next_of_kin = input("Enter relationship with next of kin")
-next_of_kin_address = input("Enter next of kin adress ")
-next_of_kin_phone_number = input("Enter next of kin phone number")
+relationship_with_next_of_kin = input("Enter relationship with next of kin: ")
+next_of_kin_address = input("Enter next of kin address: ")
+next_of_kin_phone_number = input("Enter next of kin phone number: ")
+
+
 
 print(f"Full Name: {name} {surname}")
 print(f"Age: {age}")
@@ -26,4 +33,5 @@ print(f"Next of Kin: {next_of_kin}")
 print(f"Relationship with Next of Kin: {relationship_with_next_of_kin}")
 print(f"Next of Kin Address: {next_of_kin_address}")
 print(f"Next of Kin Phone Number: {next_of_kin_phone_number}")
+
 
